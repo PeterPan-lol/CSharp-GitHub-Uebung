@@ -16,6 +16,17 @@ namespace CalculatorApp
             if (b == 0) throw new DivideByZeroException();
             return a / b;
         }
+        public double Power(double Base, double exponent)
+        {
+            return Math.Pow(Base, exponent);
+        }
+
+        public double SquareRoot(double number)
+        {
+            if (number < 0) throw new ArgumentException();
+            return Math.Sqrt(number);
+        }
+
 
         static void Main(string[] args)
         {
